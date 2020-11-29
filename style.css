@@ -1,71 +1,50 @@
+/*General formatting*/
 body {
-    display: flex;  
-    flex-direction: column;
-    padding-top: 56px;  
-    min-height: 100vh;  
-    background-image: linear-gradient(green, white);
-}
-
-nav {
-    background: white;
-    border: 5px solid black;
-    padding: 10px;
-    margin: 10px;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
-  text-align: center;
-  display: inline;
-  padding: 24px;
-  margin: 10rem;
-}
-
-.pictures {
-  border: 5px solid black;
-  width: 100%;
-}
-
-
-  footer {
-    display: flex;  
-    justify-content: center; 
-    background-color: palegreen;
-    height: 100px;
-    padding: 20px;
-  }
-  
-  footer a {
-    margin: 5px;
-    text-decoration: none!important;
-  }
-
-  .social-icon {
-    display: inline-flex;  
-    width: 50px;
-    height: 50px;
-    color: #666;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    color: black;
     background-color: white;
-    justify-content: center;  
-    align-items: center;  
-    border-radius: 50%;  
-  }
-  
-  .social-icon:hover {
-    color: #222;  
-  }
+    text-align: left;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+}
 
-  #go-top-button {
-    width: 50px;
-    height: 50px;
-    display: none;  /* Hidden by default */
-    position: fixed;  /* Fixed/sticky position */
-    bottom: 20px;  /* Place the button 20px from the bottom of the page */
-    right: 30px;  /* Place the button 30px from the right */
-    z-index: 99;  /* Make sure it does not overlap */
-    border-radius: 50%;  /* makes it round (circle if width and height are the same) */
-  }
-  
+/* Formatting for hyperlinks*/
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: gray
+}
+
+/*Formatting for the nav bar*/
+.menu {
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.menu li{
+    display:inline;
+}
+.menu a{
+    display:inline-block;
+    padding:10px;
+}
+/*image formatting*/
+.recipeImages {
+    max-width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+/*Footer formatting*/
+footer {
+    text-align: center;
+    padding: 0px;
+    font-size: small;
+    color: rgb(68, 68, 68);
+}
