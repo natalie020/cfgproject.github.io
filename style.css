@@ -44,6 +44,8 @@ a:hover {
 
 /*Overlay formatting*/
 
+* {box-sizing: border-box}
+
 .container {
   position: relative;
   width: 50%;
