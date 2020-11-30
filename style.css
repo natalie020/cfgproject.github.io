@@ -51,9 +51,9 @@ a:hover {
   background-color: white; /* Set a background color */
   color: black; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 5px; /* Some padding */
-  border-radius: 5px; /* Rounded corners */
-  border: 3px solid green;
+  padding: 8px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  border: 5px solid green;
   font-size: 18px; /* Increase font size */
 }
 
