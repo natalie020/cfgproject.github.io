@@ -42,6 +42,13 @@ a:hover {
     object-fit: contain;
 }
 
+/*Overlay formatting*/
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
 .overlay {
   position: absolute;
   bottom: 0;
@@ -60,6 +67,8 @@ a:hover {
 .container:hover .overlay {
   opacity: 1;
 }
+
+/*Go to top button*/
 
 #Button {
   position: fixed; /* Fixed/sticky position */
