@@ -52,9 +52,9 @@ a:hover {
   background-color: white; /* Set a background color */
   color: black; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 10px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
-  border: 5px solid green;
+  border: 3px solid green;
   font-size: 18px; /* Increase font size */
 }
 
