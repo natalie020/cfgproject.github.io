@@ -57,6 +57,10 @@ a:hover {
   text-align: center;
 }
 
+.container:hover .overlay {
+  opacity: 1;
+}
+
 #Button {
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
