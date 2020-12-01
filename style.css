@@ -1,13 +1,36 @@
+/*Creating responsive resizing. 1rem=10px */
+html {
+    font-size: 10px;
+
+    @media screen and (min-width: 900px) {
+      font-size: 14px;
+    }
+      
+    @media screen and (min-width: 1200px) {
+      font-size: 18px;
+    }
+  }
 /*General formatting*/
 body {
     font-family: sans-serif, 'Times New Roman', Times, serif;
     color: black;
     background-color: white;
-    text-align: left;
-    padding: 10px;
+    text-align: center;
+    padding: 1rem;
+    height: 100%;
+    font-size: 1.5rem;
 }
 h1 {
-    text-align: center;
+    font-size: 5rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.5rem;
 }
 
 /* Formatting for hyperlinks*/
@@ -19,55 +42,79 @@ a:hover {
     color: gray
 }
 
+/*Formatting for banners*/
+.banner {
+    width: 100%;
+}
+
 /*Formatting for the nav bar*/
 .menu {
-    border:1px solid #ccc;
+    border:0.1rem solid #ccc;
     border-width:1px 0;
     list-style:none;
     margin:0;
     padding:0;
     text-align:center;
-    font-size: 20px;
 }
 .menu li{
     display:inline;
+    margin-right: 1.2rem;
 }
 .menu a{
     display:inline-block;
-    padding:10px;
+    padding:1rem;
 }
 
-/*image formatting*/
-
-.recipeImages {
-    max-width: 30%;
+/*Gallery styling*/
+div.gallery {
+    margin: 0.5rem;
+    border: 1rem solid #ccc;
+    float: left;
+    width: 27rem;
+  }
+  
+  div.gallery:hover {
+    border: 1rem solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
     height: auto;
-    object-fit: contain;
+  }
+  
+  div.desc {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+/*Formatting Recipe Style*/
+.column {
+    float: left;
+    width: 50%;
+}
+
+.recipe:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.recipe img{
+    max-width: 50rem;
+}
+.recipe li{
+    list-style-position: inside;
+    text-align: left;
 }
 
 /*Go to top button*/
-
 #Button {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  outline: none; /* Remove outline */
-  background-color: white; /* Set a background color */
-  color: black; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 8px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  border: 5px solid green;
-  font-size: 18px; /* Increase font size */
-}
-
-/*Footer formatting*/
-footer {
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    font-size: small;
-    color: #097d26;
-    background-color: #C6FDBC;
-}
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2rem; /* Place the button at the bottom of the page */
+    right: 3rem; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    outline: none; /* Remove outline */
+    padding: 0.8rem; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    border: 0.5rem solid green;
+    font-size: 1.8rem; /* Increase font size */
+  }
