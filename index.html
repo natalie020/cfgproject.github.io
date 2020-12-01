@@ -8,53 +8,74 @@
 </head>
 <body>
 <header>
-    <a href="index.html"> <img src = "Going_Green_Logo.png" width="100%"></a>
-
+    <a href="index.html"><img src="Going_Green_Logo.png" class="banner" alt="Going Green Logo: dark green font on a light green background, with illustrated leaves either side" title="Going Green Logo"></a>
+    <br><br>
     <nav class="menu">
         <ul>
-            <li><a href="#vegetarianRecipes">Vegetarian</a></li>
-            <li><a href="#veganRecipes">Vegan</a></li>
+            <li><a href="#vegetarian">Vegetarian Recipes</a></li>
+            <li><a href="#vegan">Vegan Recipes</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <div class="header-img"></div>
-
-    <h2>Yummy Vegan & Vegetarian Recipes</h2>
-    <h3>Good for the planet! Good for you!</h3> 
-
-    <section class="imageHeader">
-        <img src="VegNews.GreenFoods.jpg" class="recipeImages" alt="An array of green vegetables on a white marble countertop" title="Ingredients Image">
-        <img src="Squash_Quesadillas.jpg" class="recipeImages" alt="A close-up image of a plate of squash quesadillas" title="Squash Quesadillas">
-        <img src="Pesto_Pasta.jpg" class="recipeImages" alt="A plate of green pesto pasta on a wooden countertop, with shavings of sharp cheese on top" title="Pesto Pasta">
+    <section class="about">
+        <h2>Good for the Planet, Good for You!</h2>
+            <p>Our goal at Going Green is to encourage people to eat sustainable and delicious food.<br>
+                <br>
+                Here you can find yummy recipes for vegan and vegetarian food: good for the planet and good for your stomach!</p>
     </section>
-
-    <p>Our goal at Going Green is to encourage people to eat sustainable and delicious food.<br>
-        <br>
-        Here you can find yummy recipes for vegan and vegetarian food: good for the planet and good for your stomach!</p>
-    
-    <section>
-        <h2><a name="vegetarianRecipes"><img src = "Vegetarian_Recipes_Banner.png" width="100%"></a></h2>
-        <br>
-        <br>
-        <a href="vegPasta.html"> <img src="Vegetable_Pasta.png" class="recipeImages" alt="A bowl of penna pasta with vegetables and melted cheese" title="Vegetable Pasta"></a>
-        <img src="Pizza.jpg" alt="Image of a margherita pizza with rocket on top" title="Pizza" class="recipeImages">
-        <img src="Pesto_Pasta.jpg" alt="A plate of green pesto pasta on a wooden countertop, with shavings of sharp cheese on top" title="Pesto Pasta" class="recipeImages">
-        <img src="Roast.jpg" alt="Roast dinner with roast potatoes, carrots, veggie sausage roll, peas and kale, with a chicken-style gravy" title="Vegetarian Veggie Roast" class="recipeImages">
+    <section class="vegetarianRecipes">
+        <a name="vegetarian"><img src="Vegetarian_Recipes_Banner.png" class="banner" alt="Vegetarian Recipes banner: same format as the logo" title="Vegetarian Recipes"></a>
+        <br><br>
+        <!-- Gallery coding, each div is an image with hyperlink and text below-->
+        <div class="gallery">
+            <a href="vegPasta.html">
+                <img src="Vegetable_Pasta.png" alt="A bowl of penne pasta with vegetables and melted cheese" title="Vegetable Pasta">
+                <div class="desc">Vegetable Pasta Bake</div>
+            </a>
+        </div>
+        <div class="gallery">
+            <a href="margheritaPizza.html">
+                <img src="Pizza.jpg" alt="Image of a margherita pizza with rocket on top" title="Pizza">    
+                <div class="desc">Margherita Pizza</div>
+            </a>
+        </div>
+        <div class="gallery">
+            <a href="">
+                <img src="Roast.jpg" alt="Roast dinner with roast potatoes, carrots, veggie sausage roll, peas and kale, with a chicken-style gravy" title="Vegetarian Veggie Roast">
+                <div class="desc">Veggie Roast Dinner with Chicken-Style Gravy</div>
+        </div>
+        <div class="gallery">
+            <a href="pestoPasta.html">
+                <img src="Pesto_Pasta.jpg" alt="A plate of green pesto pasta on a wooden countertop, with shavings of sharp cheese on top" title="Pesto Pasta">
+                <div class="desc">Pesto Pasta</div>
+            </a>
+        </div>
     </section>
-    <section>
-        <h2><a name="veganRecipes"><img src = "Vegan_Recipes_Banner.png" width="100%"></a></h2>
-            <br>
-            <br>
-        <a href="udonRamen.html"> <img src="Udon_Ramen.jpg" class="recipeImages" alt="A bowl of udon noodles in vegetable broth, with fried tofu and vegetables" title="Udon Noodles"></a>
-        <img src="Mushroom_Risotto.jpg" class="recipeImages" alt="Two bowls of mushroom risotto, with diced vegetables incorporated into the dish" title="Mushroom Risotto">
-        <img src="Toffee_Popcorn.jpg" class="recipeImages" alt="A close-up of a pile of toffee popcorn" title="Toffee Popcorn">
+    <section class="veganRecipes">
+        <a name="vegan"><img src="Vegan_Recipes_Banner.png" class="banner" alt="Vegan Recipes banner: same format as the logo" title="Vegan Recipes"></a>
+        <br><br>
+        <!-- Gallery coding, each gallery div is an image with hyperlink and text below-->
+        <div class="gallery">
+            <a href="udonRamen.html">
+                <img src="Udon_Ramen.jpg" alt="A bowl of udon noodles in vegetable broth, with fried tofu and vegetables" title="Udon Ramen">
+                <div class="desc">Udon Ramen</div>
+            </a>
+        </div>
+        <div class="gallery">
+            <a href="">
+                <img src="Mushroom_Risotto.jpg" alt="Two bowls of mushroom risotto, with diced vegetables incorporated into the dish" title="Mushroom Risotto">    
+                <div class="desc">Mushroom Risotto</div>
+            </a>
+        </div>
+        <div class="gallery">
+            <a href="">
+                <img src="Toffee_Popcorn.jpg" alt="A close-up of a pile of toffee popcorn" title="Toffee Popcorn">
+                <div class="desc">Toffee Popcorn</div>
+            </a>
+        </div>
     </section>
-
-    <button id="Button"><a href="#top">Back to Top</a></button>
+        <button id="Button"><a href="#top">Back to Top</a></button>
 </main>
-<footer>
-    <p>Thank you CFG 2020!</p>
-</footer>
-<body>
+</body>
 </html>
