@@ -1,13 +1,16 @@
-$(window).scroll(scrollFunction);
+mybutton = document.getElementById("Button");
+
+window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if ( $(window).scrollTop() > 20 ) {
-    $("#Button").show();
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
   } else {
-    $("#Button").hide();
+    mybutton.style.display = "none";
   }
-};
+}
 
 function topFunction() {
-    $(window).scrollTop(0);
-  }
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
