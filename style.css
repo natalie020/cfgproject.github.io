@@ -108,13 +108,13 @@ div.gallery {
 
 /*Go to top button*/
 #Button {
-    position: fixed; /* Fixed/sticky position */
-    bottom: 2rem; /* Place the button at the bottom of the page */
-    right: 3rem; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    outline: none; /* Remove outline */
-    padding: 0.8rem; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    position: fixed; 
+    bottom: 2rem; 
+    right: 3rem; 
+    z-index: 99; 
+    outline: none; 
+    padding: 0.8rem; 
+    border-radius: 10px; 
     border: 0.5rem solid green;
-    font-size: 1.8rem; /* Increase font size */
+    font-size: 1.8rem; 
   }
